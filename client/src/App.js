@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './containers/Home/Home'
 
 function App() {
   return (
     <div className="App">
-      Studytable
+      <Home/>
     </div>
   );
 }
