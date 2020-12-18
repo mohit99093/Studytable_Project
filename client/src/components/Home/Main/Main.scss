@@ -24,14 +24,12 @@
     .logo{
         display: flex;
         align-items: center;
-        img{
-            width: 49px;
-            height: 66px;
-            @media(max-width: 600px){
-                width: 45%;
-                height: auto;
-            }
+        font-weight: bold;
+        font-size: 35px;
+        @media(max-width: 600px){
+            font-size: 25px;
         }
+        
     }
     .menu{
         display: flex;
@@ -64,7 +62,7 @@
             padding: 12px 32px;
             outline: none;
             @media(max-width: 600px){
-                padding: 10px 25px;
+                padding: 8px 15px;
                 font-size: 13px;
             }
         }
@@ -86,13 +84,11 @@
         letter-spacing: -3px;
         text-align: center;
         white-space: pre-line;
-        margin-top: 100px;  
         @media(max-width: 600px){
             font-size: 45px;
             letter-spacing: 0;
             line-height: normal;
             text-align: left;
-            margin-top: 10px; 
         }
     }
     .sub{
@@ -124,7 +120,7 @@
         cursor: pointer;
         margin-top: 58px; 
         @media(max-width: 600px){
-            padding: 8px 20px;
+            padding: 10px 20px;
             font-size: 17px;
             
         }

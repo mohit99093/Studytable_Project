@@ -6,7 +6,7 @@ export default function Main() {
         <section className="main" >
             <div className="navbar" >
                <div className="logo" >
-                 <img src="https://web-assets.cred.club/_next/assets/images/home-page/cred-logo.png" alt="pic" />
+                 StudyTable
                </div>
                <div className="menu">
                    <div className="list" >
