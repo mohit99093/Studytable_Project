@@ -8,7 +8,7 @@ export default function Main() {
                <div className="logo" >
                  StudyTable
                </div>
-               <div className="menu">
+               <div className="menu" >
                    <div className="list" >
                       <a href="/">Blogs</a>
                    </div>

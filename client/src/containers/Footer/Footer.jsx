@@ -7,15 +7,15 @@ export default function Footer() {
            <div className="foot" >
                <div className="flex" >
                    <div className="lists" >
-                       <div><a href="https://blog.cred.club">Blog</a></div>
-                       <div><a href="https://blog.cred.club">Career</a></div>
-                       <div><a href="https://blog.cred.club">Terms and Condition</a></div>
-                       <div><a href="https://blog.cred.club">UPI FAQ</a></div>
-                       <div><a href="https://blog.cred.club">Google API</a></div>
-                       <div><a href="https://blog.cred.club">Security</a></div>
-                       <div><a href="https://blog.cred.club">Priacy policy</a></div>
-                       <div><a href="https://blog.cred.club">Return & Refund policy</a></div>
-                       <div className="odd" ><a href="https://blog.cred.club">Complete security. no asterisks.</a></div>
+                       <div><a href="/">Blog</a></div>
+                       <div><a href="/">Career</a></div>
+                       <div><a href="/">Terms and Condition</a></div>
+                       <div><a href="/">UPI FAQ</a></div>
+                       <div><a href="/">Google API</a></div>
+                       <div><a href="/">Security</a></div>
+                       <div><a href="/">Priacy policy</a></div>
+                       <div><a href="/">Return & Refund policy</a></div>
+                       <div className="odd" ><a href="/">Complete security. no asterisks.</a></div>
                        <p className="par" >CRED encrypts all data and transactions to ensure a completely secure experience for our members.</p>
                        <img src="https://web-assets.cred.club/_next/assets/images/home-page/security-cert.png" alt="pic" />
                    </div>
