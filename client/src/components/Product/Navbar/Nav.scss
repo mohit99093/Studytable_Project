@@ -6,16 +6,25 @@
     position: fixed;
     top: 0;
     z-index: 100;
+    @media(max-width:600px){
+        padding: 10px;
+    }
     .nav{
         width: 75%;
         margin-right: auto;
         margin-left: auto;
+        @media(max-width:600px){
+            width: 100%;
+        }
         .left{
             float: left;
             font-weight: bold;
         }
         .right{
             float: right;
+            @media(max-width:600px){
+                display: none;
+            }
             ul{
                 list-style: none;
                 padding: 0;
