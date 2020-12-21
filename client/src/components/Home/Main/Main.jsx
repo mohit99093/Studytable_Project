@@ -10,7 +10,7 @@ export default function Main() {
                </div>
                <div className="menu" >
                    <div className="list" >
-                      <a href="/">Blogs</a>
+                      <a href="/product">Products</a>
                    </div>
                    <div className="list" >
                       <a href="/">We are hiring</a>
@@ -20,8 +20,8 @@ export default function Main() {
                    </div>
                </div>
             </div>
-            <div className="heads" >
-                <div className="reward" >
+            <div className="heads">
+                <div className="reward">
                    Rewards for paying credit card bills.
                 </div>
                 <div className="sub" >
