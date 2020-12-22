@@ -2,6 +2,13 @@ import React from 'react'
 import './Front.scss'
 
 export default function Front() {
+    function handle() {
+        window.scroll({
+          top: document.body.offsetHeight/3.7,
+          left: 0, 
+          behavior: 'smooth',
+        });
+      }
     return (
         <div className="front" >
             <div className="contain" >
@@ -13,7 +20,7 @@ export default function Front() {
                     We do seed and seed only, and we have been doing seed for the last 10 years.
                 </div>
             </div>
-            <a className="down"></a>
+            <a className="down" onClick={handle} ></a>
         </div>
     )
 }

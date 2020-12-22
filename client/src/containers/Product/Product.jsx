@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import Navbar from '../../components/Product/Navbar/Nav'
 import Front from '../../components/Product/Front/Front'
 import Sec1 from '../../components/Product/Section1/Sec1'

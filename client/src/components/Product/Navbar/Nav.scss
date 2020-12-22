@@ -7,7 +7,7 @@
     top: 0;
     z-index: 100;
     @media(max-width:600px){
-        padding: 10px;
+        padding: 20px;
     }
     .nav{
         width: 75%;
@@ -19,6 +19,9 @@
         .left{
             float: left;
             font-weight: bold;
+            @media(max-width:600px){
+               font-size: 20px;
+            }
         }
         .right{
             float: right;
@@ -44,4 +47,16 @@
             }
         }
     }
+}
+.bgwhite{
+    background-color: white !important;
+}
+.icon{
+    display: none !important;
+    @media(max-width:600px){
+        display: block !important;
+        float: right;
+        margin-right: 2em;
+    }
+    
 }
