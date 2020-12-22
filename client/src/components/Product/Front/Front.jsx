@@ -4,7 +4,7 @@ import './Front.scss'
 export default function Front() {
     function handle() {
         window.scroll({
-          top: document.body.offsetHeight/3.7,
+          top: document.body.offsetHeight/4.3,
           left: 0, 
           behavior: 'smooth',
         });
