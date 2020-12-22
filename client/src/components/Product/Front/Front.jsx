@@ -13,7 +13,7 @@ export default function Front() {
                     We do seed and seed only, and we have been doing seed for the last 10 years.
                 </div>
             </div>
-            <a className="down" ></a>
+            <a className="down"></a>
         </div>
     )
 }
