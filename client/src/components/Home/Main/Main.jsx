@@ -4,16 +4,25 @@ import './Main.scss'
 export default function Main() {
     return (
         <section className="main" >
-            <div className="navbar" >
-               <div className="logo" >
-                 StudyTable
-               </div>
+            <div className="navbar" >               
                <div className="menu" >
                    <div className="list" >
-                      <a href="/product">Products</a>
+                      <a href="/product">Student</a>
                    </div>
                    <div className="list" >
-                      <a href="/">We are hiring</a>
+                      <a href="/">Teacher</a>
+                   </div>
+                   <div className="list" >
+                      <a href="/">School</a>
+                   </div>
+                   <div className="list" >
+                      <a href="/">Coaching</a>
+                   </div>
+                   <div className="list" >
+                      <a href="/">Contact Us</a>
+                   </div>
+                   <div className="list" >
+                      <a href="/">Blogs</a>
                    </div>
                    <div className="btns" >
                          Download Studytable
@@ -22,15 +31,15 @@ export default function Main() {
             </div>
             <div className="heads">
                 <div className="reward">
-                   Rewards for paying credit card bills.
+                   STUDY<span>table</span>
                 </div>
                 <div className="sub" >
-                    Join 3M+ members and win rewards worth ₹5 crores daily.
-                </div>
-                <div className="dwnld" >
-                   Download Studytable
+                    "Care a smile"
                 </div>
             </div>
+            <div className="dwnld" >
+                   Download Studytable
+                </div>
         </section>
     )
 }

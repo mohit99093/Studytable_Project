@@ -38,12 +38,6 @@ export default function Footer() {
                        </div>
                        <div><span>About Studytable</span>
                           <div className="desc" >CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.</div>
-                       </div>
-                       <div><span>About Studytable</span>
-                          <div className="desc" >CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.</div>
-                       </div>
-                       <div><span>About Studytable</span>
-                          <div className="desc" >CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.</div>
                        </div>                   
                    </div>
                </div>
