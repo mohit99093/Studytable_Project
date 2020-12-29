@@ -34,12 +34,12 @@ export default function Main() {
                    STUDY<span>table</span>
                 </div>
                 <div className="sub" >
-                    "Care a smile"
+                    Care a smile
                 </div>
             </div>
             <div className="dwnld" >
                    Download Studytable
-                </div>
+            </div>
         </section>
     )
 }
