@@ -1,6 +1,10 @@
 import React,{useEffect, useState} from 'react'
 import './Nav.scss'
 import DehazeIcon from '@material-ui/icons/Dehaze';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
 
 export default function Nav() {
     const [classes,setClasses] = useState('')
@@ -14,21 +18,76 @@ export default function Nav() {
      useEffect(()=>{
         window.addEventListener('scroll',listenScrollEvent)
      },[])  
+
+     const [state, setState] = React.useState({
+        right: false,
+      });
+
+      const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+        }
+    
+        setState({ ...state, [anchor]: open });
+      };
+
+      const list = (anchor) => (
+        <div
+          className="drawer"
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+        >
+          <List>
+            <ListItem style={{padding:'20px',fontWeight:'bold',fontSize:'20px',display:'flex',justifyContent:'center'}} >
+               STUDY<span style={{fontSize:'30px'}} >table</span>
+            </ListItem>
+            <Divider/>
+            <ListItem style={{padding:'20px',fontWeight:'bold'}} >
+               <a style={{color:'black', textDecoration:'none' }}  href="/" >Home</a>
+            </ListItem>
+            <Divider/>
+            <ListItem style={{padding:'20px',fontWeight:'bold'}} >
+               <a style={{color:'black', textDecoration:'none' }} >Teacher</a>
+            </ListItem>
+            <Divider/>
+            <ListItem style={{padding:'20px',fontWeight:'bold'}} >
+               <a style={{color:'black', textDecoration:'none' }} >Coaching</a>
+            </ListItem>
+            <Divider/>
+            <ListItem style={{padding:'20px',fontWeight:'bold'}} >
+              <a style={{color:'black', textDecoration:'none' }} >School</a>
+           </ListItem>
+           <Divider/>
+           <ListItem style={{padding:'20px',fontWeight:'bold'}} >
+             <a style={{color:'black', textDecoration:'none' }} >Contact Us</a>
+          </ListItem>
+           <Divider/>
+          </List>
+        </div>
+      );
     return (
         <header className={classes+ " header_nav"} >
             <nav className="nav" >
                 <div className="left" >
-                   Studytable
+                   STUDY<span>table</span>
                 </div>
                 <div className="right" >
                    <ul>
                        <li><a href="/" >Home</a></li>
-                       <li><a style={{color:'#2baba7'}} >Products</a></li>
-                       <li><a>Portfolio</a></li>
-                       <li><a>Insights</a></li>
+                       <li><a style={{color:'#2baba7'}} >Students</a></li>
+                       <li><a>Teacher</a></li>
+                       <li><a>School</a></li>
+                       <li><a>Coaching</a></li>
+                       <li><a>Blogs</a></li>
                    </ul>
                 </div>
-                <DehazeIcon className="icon" />
+                <React.Fragment key="right">
+               <div className="icon" onClick={toggleDrawer("right", true)} > <DehazeIcon/> </div> 
+              <Drawer anchor={"right"} open={state["right"]} onClose={toggleDrawer("right", false)}>
+                 {list("right")}
+              </Drawer>
+      </React.Fragment>
             </nav>
         </header>
     )

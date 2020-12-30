@@ -12,23 +12,27 @@ export default function Footer() {
         <div className="fut" >
              <div className="containers" >
                  <div className="head" >
-                    The StudyTable<span><ChevronRightIcon fontSize="inherit" /></span>
+                    Contact Us<span><ChevronRightIcon fontSize="inherit" /></span>
                  </div>
                  <div class="middlegap"></div>
                  <div className="contact" >
                      <div className="address" >
-                         <div>bittu@studytable.ac.in</div>
-                         <div>202, Delta, Chemtex Lane, Hiranandani Gardens, Powai, Mumbai.</div>
-                         <div>©2020 India Quotient. All Rights Reserved.</div>
+                         <div><a href="/">Blogs</a></div>
+                         <div><a href="/">Contact Us</a></div>
+                         <div><a href="/">Student</a></div>
+                         <div><a href="/">Teacher</a></div>
+                         <div><a href="/">School</a></div>
+                         <div><a href="/">Coaching</a></div>
+                         <div style={{marginTop:'2em',fontSize:'15px'}} >copyright © 2020 Studytable Pvt Ltd.</div>
                      </div>
                      <div className="social">
                        Follow us on : 
                        <span> 
-                       <FacebookIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)'}} />
-                       <TwitterIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)'}} />
-                       <YouTubeIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)'}} />
-                       <InstagramIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)'}} />
-                       <LinkedInIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)'}} /> 
+                       <FacebookIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)',fontSize:'30px'}} />
+                       <TwitterIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)',fontSize:'30px'}} />
+                       <YouTubeIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)',fontSize:'30px'}} />
+                       <InstagramIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)',fontSize:'30px'}} />
+                       <LinkedInIcon style={{marginRight:'1em',color:'rgb(43, 171, 167)',fontSize:'30px'}} /> 
                        </span>                        
                      </div>
                  </div>

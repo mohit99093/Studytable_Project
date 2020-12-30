@@ -11,9 +11,9 @@ export default function Product() {
            <Navbar/>
            <section>
               <Front/>
-              <Sec1 title="Life at Studytable" image="https://www.indiaquotient.in/images/mantraimg.jpg" />
+              {/*<Sec1 title="Life at Studytable" image="https://www.indiaquotient.in/images/mantraimg.jpg" />
               <Grid/>
-              <Sec1 title="Some hacks to our termsheet" image="https://www.indiaquotient.in/images/mantraimg2.jpg" />
+    <Sec1 title="Some hacks to our termsheet" image="https://www.indiaquotient.in/images/mantraimg2.jpg" />*/}
               <Footer/>
            </section>
         </React.Fragment>

@@ -1,8 +1,7 @@
 .header_nav{
     width: 100%;
     background: rgb(254, 235, 217);
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 25px 0;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -13,12 +12,19 @@
         width: 75%;
         margin-right: auto;
         margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @media(max-width:600px){
-            width: 100%;
+            width: 95%;
         }
         .left{
             float: left;
             font-weight: bold;
+            font-size: 20px;
+            span{
+               font-size: 30px;
+            }
             @media(max-width:600px){
                font-size: 20px;
             }
@@ -34,7 +40,7 @@
                 margin: 0;
                 li{
                     display: inline-block;
-                    margin-left: 35px;
+                    margin-left: 25px;
                     a{
                         text-decoration: none;
                         font-size: 18px;

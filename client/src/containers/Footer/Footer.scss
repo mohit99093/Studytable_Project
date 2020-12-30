@@ -56,7 +56,7 @@ footer{
                 margin-top: 2em;
             }
             div{
-                
+                margin-bottom: 30px;
                 // div{
                 //     font-size: 12px;
                 //     letter-spacing: .3px;
@@ -113,5 +113,13 @@ footer{
     font-size: 20px;
     span{
         margin-left: 2em;
+    }
+    @media(max-width:600px){
+        flex-direction: column;
+        align-items: center;
+        font-size: 17px;
+        span{
+            margin: 2em 0 0;
+        }
     }
 }

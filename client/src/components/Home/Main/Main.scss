@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     @media(max-width: 600px){
-        padding: 50px 30px;
+        padding: 40px 30px;
         min-height: 40em;
     }
 }
@@ -21,25 +21,19 @@
     justify-content: center;
     align-items: center;
     @media(max-width: 600px){
-        justify-content: flex-end;
+        width: 100%;
+        justify-content: space-between;
     }
-    .logo{
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        font-size: 35px;
+    .ic{
+        display: none;
         @media(max-width: 600px){
-            font-size: 25px;
+            display: block;
         }
-        
     }
     .menu{
         display: flex;
         align-items: center;
         font-weight: bold;
-        @media(max-width: 600px){
-            justify-content: flex-start;
-        }
         .list{
             padding: 4px;
             margin: 0 1em;
@@ -69,8 +63,10 @@
             @media(max-width: 600px){
                 padding: 8px 15px;
                 font-size: 13px;
+                margin: 0;
             }
         }
+       
     }
 }
 
@@ -142,4 +138,7 @@
         margin-top: 25px;
         margin-bottom: 3em;
     }
+}
+.drawer{
+    width: 270px;
 }
