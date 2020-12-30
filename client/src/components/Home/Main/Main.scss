@@ -13,7 +13,6 @@
     align-items: center;
     @media(max-width: 600px){
         padding: 40px 30px;
-        min-height: 40em;
     }
 }
 .navbar{
@@ -111,7 +110,7 @@
             line-height: 1.5;
             text-align: left;
             margin: 1em 0;
-            letter-spacing: 1.03rem;
+            letter-spacing: 0.9rem;
         }
     }
     
