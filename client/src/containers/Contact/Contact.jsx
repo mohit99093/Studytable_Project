@@ -44,6 +44,7 @@ export default function Contact() {
     console.log(contact)
     return (
         <div className="contacts" >
+             <a className="logo" href="/" > STUDY<span>table </span> </a>
              <h1>Contact Us</h1>
             <div className="form" >
                 <form onSubmit={postContact}>
