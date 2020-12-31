@@ -73,7 +73,7 @@ export default function Main() {
                       <a href="/">Coaching</a>
                    </div>
                    <div className="list" >
-                      <a href="/">Contact Us</a>
+                      <a href="/contact">Contact Us</a>
                    </div>
                    <div className="list" >
                       <a href="/">Blogs</a>

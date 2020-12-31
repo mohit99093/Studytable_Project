@@ -1,0 +1,79 @@
+.contacts{
+    background-image: url("https://web-assets.cred.club/_next/assets/images/home-page/hero-bg.png");
+    width: 100%;
+    height: 100vh;
+    h1{
+        margin: 0 !important;
+        padding: 1em 0;
+        text-align: center;
+        width: 100%;
+        color: #2baba7;
+    }
+    .form{
+        width: 100%;
+        margin: 2em 0;
+        form{
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .input{
+                width: 60%;
+                h6{
+                    margin: 1em 0 !important;
+                    font-size: 17px;
+                    input{
+                        border-radius: 8px;
+                        color: white !important;
+                        // border: 1px solid #2baba7;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.MuiFormLabel-root.Mui-focused{
+    color: #2baba7 !important;
+}
+.MuiFormControl-root{
+    width: 100% !important;
+
+}
+.MuiInput-underline:before{
+    border-bottom:  2px solid white !important;
+}
+.MuiInput-underline:after{
+    border-bottom: 2px solid #2baba7 !important;
+}
+.MuiInputLabel-root{
+    color: white !important;
+    text-transform: capitalize !important;
+}
+.next{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    .btn13{
+        background-color: #2baba7 !important;
+        color: white !important;
+        font-size: 14px !important;
+        padding: 0.5em 1em !important;
+        border: 8px !important;
+    }    
+
+}
+.subm{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    .btn13{
+        background-color: #2baba7 !important;
+        color: white !important;
+        font-size: 14px !important;
+        padding: 0.5em 1em !important;
+        border: 8px !important;
+    }    
+
+}
