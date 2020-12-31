@@ -33,23 +33,23 @@ export default function Main() {
           </ListItem>
           <Divider/>
           <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-             <a style={{color:'black', textDecoration:'none' }}  href="/product" >Students</a>
+             <a style={{color:'black', textDecoration:'none' }}  href="/student" >Students</a>
           </ListItem>
           <Divider/>
           <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-             <a style={{color:'black', textDecoration:'none' }} >Teacher</a>
+             <a style={{color:'black', textDecoration:'none' }} href="/teacher" >Teacher</a>
           </ListItem>
           <Divider/>
           <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-             <a style={{color:'black', textDecoration:'none' }} >Coaching</a>
+             <a style={{color:'black', textDecoration:'none' }} href="/coaching" >Coaching</a>
           </ListItem>
           <Divider/>
           <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-            <a style={{color:'black', textDecoration:'none' }} >School</a>
+            <a style={{color:'black', textDecoration:'none' }} href="/school" >School</a>
          </ListItem>
          <Divider/>
          <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-           <a style={{color:'black', textDecoration:'none' }} >Contact Us</a>
+           <a style={{color:'black', textDecoration:'none' }} href="/contact" >Contact Us</a>
         </ListItem>
          <Divider/>
         </List>
@@ -61,16 +61,16 @@ export default function Main() {
             <div className="navbar" >                            
                <div className="menu" >
                    <div className="list" >
-                      <a href="/product">Student</a>
+                      <a href="/student">Student</a>
                    </div>
                    <div className="list" >
-                      <a href="/">Teacher</a>
+                      <a href="/teacher">Teacher</a>
                    </div>
                    <div className="list" >
-                      <a href="/">School</a>
+                      <a href="/school">School</a>
                    </div>
                    <div className="list" >
-                      <a href="/">Coaching</a>
+                      <a href="/coaching">Coaching</a>
                    </div>
                    <div className="list" >
                       <a href="/contact">Contact Us</a>

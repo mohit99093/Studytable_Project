@@ -48,19 +48,23 @@ export default function Nav() {
             </ListItem>
             <Divider/>
             <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-               <a style={{color:'black', textDecoration:'none' }} >Teacher</a>
+              <a  href="/student" style={{color:'black', textDecoration:'none' }} >Student</a>
+           </ListItem>
+           <Divider/>
+            <ListItem style={{padding:'20px',fontWeight:'bold'}} >
+               <a href="/teacher" style={{color:'black', textDecoration:'none' }} >Teacher</a>
             </ListItem>
             <Divider/>
             <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-               <a style={{color:'black', textDecoration:'none' }} >Coaching</a>
+               <a href="/coaching" style={{color:'black', textDecoration:'none' }} >Coaching</a>
             </ListItem>
             <Divider/>
             <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-              <a style={{color:'black', textDecoration:'none' }} >School</a>
+              <a href="/school" style={{color:'black', textDecoration:'none' }} >School</a>
            </ListItem>
            <Divider/>
            <ListItem style={{padding:'20px',fontWeight:'bold'}} >
-             <a style={{color:'black', textDecoration:'none' }} >Contact Us</a>
+             <a href="/contact" style={{color:'black', textDecoration:'none' }} >Contact Us</a>
           </ListItem>
            <Divider/>
           </List>
@@ -75,11 +79,11 @@ export default function Nav() {
                 <div className="right" >
                    <ul>
                        <li><a href="/" >Home</a></li>
-                       <li><a style={{color:'#2baba7'}} >Students</a></li>
-                       <li><a>Teacher</a></li>
-                       <li><a>School</a></li>
-                       <li><a>Coaching</a></li>
-                       <li><a>Blogs</a></li>
+                       <li><a href="/student" >Students</a></li>
+                       <li><a href="/teacher"  style={{color:'#2baba7'}} >Teacher</a></li>
+                       <li><a href="/school" >School</a></li>
+                       <li><a href="/coaching" >Coaching</a></li>
+                       <li><a href="/blog" >Blogs</a></li>
                    </ul>
                 </div>
                 <React.Fragment key="right">
