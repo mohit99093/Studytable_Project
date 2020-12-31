@@ -6,36 +6,33 @@ import { useState } from 'react';
 
 
 export default function Contact() {
-    const [inp,setInp] = useState(['name'])
+    const schema = {name:'',email:'',contact:'',city:'',school:''}
+    const [inp,setInp] = useState([{name:'name',val:'name'}])
     let val
     const handle =()=>{
         if(inp.length===1){
-            val = "email"
-            setInp([...inp,val])            
+            setInp([...inp,{name:"email",val:"email"}])            
         }
         else if(inp.length===2){
-            val = "contact"
-            setInp([...inp,val])            
+            setInp([...inp,{name:"contact",val:"contact"}])            
         }
         else if(inp.length===3){
-            val = "phone"
-            setInp([...inp,val])            
+            setInp([...inp,{name:"city",val:"city"}])            
         }
         else if(inp.length===4){
-            val = "school"
-            setInp([...inp,val])            
+            setInp([...inp,{name:"school",val:"Institute/school/coaching"}])            
         }
     }
     console.log(inp)
     return (
         <div className="contacts" >
-            <h1>Contact Us</h1>
+             <h1>Contact Us</h1>
             <div className="form" >
                 <form onSubmit={(e)=>{e.preventDefault()}}>
                    {inp.map(item=>{
                        return(
                         <div className="input" >
-                        <h6><TextField id="outlined-basic" label={item} required />  </h6> 
+                        <h6><TextField id="outlined-basic" name={item.name} label={item.val} required />  </h6> 
                        </div>
                        )
                    })}
