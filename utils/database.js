@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const connection = process.env.mongoUrl || "mongodb://127.0.0.1:27017/study-table"
+const connection = process.env.mongoUrl || "mongodb://127.0.0.1:27017/studyTable"
 
 mongoose.connect(connection,{useNewUrlParser:true,useCreateIndex:'true',useFindAndModify:false,useUnifiedTopology:true})
 
