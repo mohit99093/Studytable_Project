@@ -65,14 +65,33 @@
         align-items: center;
         font-size: 20px;
         font-weight: bold;
+        margin-top: 6em;
         @media(max-width:600px){
             flex-direction: column;
-            margin: 0 0 1em 0;
         }
         span{
             margin-left: 2em;
             @media(max-width:600px){
                 margin-top: 1em;
+            }
+        }
+    }
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .newsletter{
+        .join{
+            margin: 1em 0;
+            color: black;
+        }
+        .inp{
+            ._btns{
+                color: rgb(43, 171, 167) !important;
+                @media(max-width:600px){
+                    margin-bottom: 1em !important;
+                }
             }
         }
     }

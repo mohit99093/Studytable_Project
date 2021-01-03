@@ -1,4 +1,5 @@
 const Contact = require('../models/contact')
+const Email = require('../models/emails')
 
 //contact
 exports.postContact = async (req,res)=>{
@@ -10,4 +11,14 @@ exports.postContact = async (req,res)=>{
        catch(e){          
           res.json({status:401,message:e.message})
        }
+}
+exports.postEmail = async (req,res)=>{
+   const email = new Email(req.body)
+   try{
+      await email.save()
+      res.json({status:201,message:'We got your email. Will update you soon !!'})
+   }
+   catch(e){          
+      res.json({status:401,message:e.message})
+   }
 }

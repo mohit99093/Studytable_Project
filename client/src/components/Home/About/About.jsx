@@ -5,10 +5,10 @@ export default function About() {
     return (
         <div className="about" >
             <div>
-             Our faculty is from the best institutes around the world such as IITD, Stanford and more. 
-             They also have work experience in tech giants like Amazon, Facebook, Adobe which makes them exceptional. 
-             An incredible mentor support is provided where 1 teaching assistant is assigned to 10 students. 
-             The TA’s are top performers alumni dedicated to provided where 1 teaching assistant is assigned to 10 students.
+             Building Education for AI Age<br/> <br/>
+             Every child is unique. We celebrate uniqueness. <br/>
+             Excellence is hard. We embrace the hardship.<br/><br/>
+             Education should shift from mass teaching to personalized teaching.
              <span><a href="/product" > Lets talk... </a></span> 
             </div>
         </div>
