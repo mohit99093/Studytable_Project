@@ -12,17 +12,17 @@ export default function Footer() {
         <div className="fut" >
              <div className="containers" >
                  <div className="head" >
-                    Contact Us<span><ChevronRightIcon fontSize="inherit" /></span>
+                    <a href="/contact" >Contact Us</a><span><ChevronRightIcon fontSize="inherit" /></span>
                  </div>
                  <div class="middlegap"></div>
                  <div className="contact" >
                      <div className="address" >
-                         <div><a href="/">Blogs</a></div>
                          <div><a href="/">Contact Us</a></div>
                          <div><a href="/">Student</a></div>
                          <div><a href="/">Teacher</a></div>
                          <div><a href="/">School</a></div>
                          <div><a href="/">Coaching</a></div>
+                         <div><a href="/">Blogs</a></div>
                          <div style={{marginTop:'2em',fontSize:'15px'}} >copyright © 2020 Studytable Pvt Ltd.</div>
                      </div>
                      <div className="social">

@@ -79,7 +79,7 @@ export default function Nav() {
                 <div className="right" >
                    <ul>
                        <li><a href="/" >Home</a></li>
-                       <li><a href="/student"  style={{color:'#2baba7'}} >Students</a></li>
+                       <li><a href="/student"  style={{color:'#2baba7'}} >Student</a></li>
                        <li><a href="/teacher" >Teacher</a></li>
                        <li><a href="/school" >School</a></li>
                        <li><a href="/coaching" >Coaching</a></li>

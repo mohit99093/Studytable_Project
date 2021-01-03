@@ -13,12 +13,12 @@ export default function Footer() {
            <div className="foot" >
                <div className="flex" >
                    <div className="lists" >
-                       <div><a href="/">Blogs</a></div>
-                       <div><a href="/">Contact Us</a></div>
                        <div><a href="/">Student</a></div>
                        <div><a href="/">Teacher</a></div>
                        <div><a href="/">School</a></div>
                        <div><a href="/">Coaching</a></div>
+                       <div><a href="/">Blogs</a></div>
+                       <div><a href="/">Contact Us</a></div>
                        {/*<div className="odd" ><a href="/">Complete security. no asterisks.</a></div>
                        <p className="par" >CRED encrypts all data and transactions to ensure a completely secure experience for our members.</p>
                        <img src="https://web-assets.cred.club/_next/assets/images/home-page/security-cert.png" alt="pic" />*/}
