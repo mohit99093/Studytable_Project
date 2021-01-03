@@ -112,3 +112,14 @@
     }    
 
 }
+.status{
+    margin: 3em 0;
+    text-align: center;
+    font-weight: bold;
+    .green{
+        color: #2baba7;
+    }
+    .red{
+        color: red;
+    }
+}

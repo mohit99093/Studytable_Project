@@ -26,6 +26,9 @@ export default function Contact() {
             setInp([...inp,{name:"school",val:"Institute/school/coaching"}])            
         }
     }
+    //response state
+    const [status,setStatus] = useState({})
+
     //backend-frontend integration
     const postContact = (e)=>{
             e.preventDefault();
@@ -37,11 +40,22 @@ export default function Contact() {
                   },
             }).then(res=>res.json()).then(res=>{
                 console.log(res)
+                setStatus(res)
             }).catch(err => {
                 console.log(err);
             })
     }
-    console.log(contact)
+    let msg
+    if(status.status===201){
+        setTimeout(()=>{
+            window.location.reload()
+        },2500)
+        msg = status.message;
+    }
+    else if(status.status===401){
+       const m = status.message.split(':')
+       msg = m[2];
+    }
     return (
         <div className="contacts" >
              <a className="logo" href="/" > STUDY<span>table </span> </a>
@@ -57,9 +71,11 @@ export default function Contact() {
                    })}
                    {inp.length<5?<div className="next" > <Button className="btn13" onClick={handle} > Next </Button> </div>:
                    <div className="subm" > <Button className="btn13" type="submit" > Submit </Button> </div>
-                }
-                   
+                }                   
                 </form>
+                <div className="status">
+                    <p className={status.status===201?"green":"red"} > {msg} </p>
+                </div>
             </div>
         </div>
     )

@@ -8,12 +8,16 @@ const contactSchema  = new mongoose.Schema({
     },
     email:{
         type:String,
-        required:true
+        required:true,
+        validate(val){
+            if(!validator.isEmail(val)){
+                throw new Error("Invalid Email")
+            }
+        }
     },
     contact:{
         type:String,
-        required:true,
-        
+        required:true,        
     },
     city:{
         type:String,
