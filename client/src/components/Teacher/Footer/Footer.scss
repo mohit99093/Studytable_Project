@@ -68,6 +68,7 @@
         margin-top: 6em;
         @media(max-width:600px){
             flex-direction: column;
+            margin-top: 0em !important;
         }
         span{
             margin-left: 2em;

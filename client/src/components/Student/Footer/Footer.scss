@@ -61,13 +61,14 @@
     }
     .social{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         font-size: 20px;
         font-weight: bold;
         margin-top: 6em;
         @media(max-width:600px){
             flex-direction: column;
+            margin-top: 0em !important;
         }
         span{
             margin-left: 2em;
