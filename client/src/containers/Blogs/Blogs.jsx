@@ -12,6 +12,12 @@ export default function Blogs() {
         setBlog(res);
       });
   }, []);
+  let s = "It is a moment of honour for me to be associated as the Head of Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a platform for discovering and amplifying your interest in the world              of entry Committee of Entrepreneurship Cell, NITH. E-Cell is a              platfory Committee of Entrepreneurship Cell, NITH. E-Cell is a             platform for discovering and amplifying your interest in the world"
+          
+  const string = (str) => {
+    let s = str.substr(0, 450);
+    return s;
+  };
   return (
     <React.Fragment>
       <div className="blogs">
@@ -19,71 +25,57 @@ export default function Blogs() {
           STUDY<span>table</span>
         </a>
         <h1>Blogs</h1>
+        <p> The Sub Heading </p>
         <div className="contain">
           <div className="card">
             <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
             <h3> Heading </h3>
             <p>
-              It is a moment of honour for me to be associated as the Head of
-              Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a
-              platform for discovering and amplifying your interest in the world
-              of ent
+              {string(s)}...
+              <span>
+                <a href="/blogs/detail">Read More</a>
+              </span>
             </p>
-            <a href="/blogs/detail">
-              <Button className="butns"> Read More </Button>
-            </a>
           </div>
           <div className="card">
             <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
             <h3> Heading </h3>
             <p>
-              It is a moment of honour for me to be associated as the Head of
-              Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a
-              platform for discovering and amplifying your interest in the world
-              of ent
+              {string(s)}...
+              <span>
+                <a href="/blogs/detail">Read More</a>
+              </span>
             </p>
-            <a href="/blogs/detail">
-              <Button className="butns"> Read More </Button>
-            </a>
           </div>
           <div className="card">
             <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
             <h3> Heading </h3>
             <p>
-              It is a moment of honour for me to be associated as the Head of
-              Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a
-              platform for discovering and amplifying your interest in the world
-              of ent
+              {string(s)}...
+              <span>
+                <a href="/blogs/detail">Read More</a>
+              </span>
             </p>
-            <a href="/blogs/detail">
-              <Button className="butns"> Read More </Button>
-            </a>
           </div>
           <div className="card">
             <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
             <h3> Heading </h3>
             <p>
-              It is a moment of honour for me to be associated as the Head of
-              Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a
-              platform for discovering and amplifying your interest in the world
-              of ent
+              {string(s)}...
+              <span>
+                <a href="/blogs/detail">Read More</a>
+              </span>
             </p>
-            <a href="/blogs/detail">
-              <Button className="butns"> Read More </Button>
-            </a>
           </div>
           <div className="card">
             <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
             <h3> Heading </h3>
             <p>
-              It is a moment of honour for me to be associated as the Head of
-              Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a
-              platform for discovering and amplifying your interest in the world
-              of ent
+              {string(s)}...
+              <span>
+                <a href="/blogs/detail">Read More</a>
+              </span>
             </p>
-            <a href="/blogs/detail">
-              <Button className="butns"> Read More </Button>
-            </a>
           </div>
         </div>
       </div>

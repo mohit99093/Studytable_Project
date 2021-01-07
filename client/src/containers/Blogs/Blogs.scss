@@ -25,14 +25,18 @@
       margin-top: 0.5em;
     }
   }
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
 }
 
 .contain {
-  width: 90%;
-  margin: 2em auto;
+  width: 75%;
+  margin: 3em auto;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 1em;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2.5em;
   @media (max-width: 600px) {
     grid-template-columns: auto;
   }
@@ -51,19 +55,15 @@
     }
     p {
       text-align: center;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.4;
     }
-    a {
-      display: flex;
-      justify-content: center;
-      color: white;
-      text-decoration: none;
-      .butns {
-        color: white !important;
-        background-color: skyblue !important;
-        padding: 0.65em 1em !important;
-        border-radius: 20px !important;
+    span {
+      margin-left: 0.5em;
+      a {
+        color: skyblue;
+        text-decoration: none;
+        font-weight: bold;
       }
     }
   }

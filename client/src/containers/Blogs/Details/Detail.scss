@@ -14,11 +14,27 @@
 
 .det {
   width: 80%;
-  margin: 5em auto;
+  margin: 2.5em auto;
   div {
-    margin: 4em 0;
+    margin: 2em 0 0em;
+    h4 {
+      font-size: 25px;
+    }
     p {
-      font-size: 15px;
+      font-weight: bold;
+    }
+    .sec {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 48%;
+      }
+      p {
+        width: 48%;
+        font-size: 15px;
+        line-height: 1.5;
+      }
     }
   }
 }
