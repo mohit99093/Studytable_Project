@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
 import Footer from "../Footer/Footer";
 import { Button } from "@material-ui/core";
 
 export default function Blogs() {
+  const [blog, setBlog] = useState([{}]);
+  useEffect(() => {
+    fetch("/api/blog")
+      .then((res) => res.json())
+      .then((res) => {
+        setBlog(res);
+      });
+  }, []);
   return (
     <React.Fragment>
       <div className="blogs">
