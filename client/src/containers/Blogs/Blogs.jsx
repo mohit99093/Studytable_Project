@@ -15,7 +15,7 @@ export default function Blogs() {
   let s = "It is a moment of honour for me to be associated as the Head of Advisory Committee of Entrepreneurship Cell, NITH. E-Cell is a platform for discovering and amplifying your interest in the world              of entry Committee of Entrepreneurship Cell, NITH. E-Cell is a              platfory Committee of Entrepreneurship Cell, NITH. E-Cell is a             platform for discovering and amplifying your interest in the world"
           
   const string = (str) => {
-    let s = str.substr(0, 450);
+    let s = str.substr(0, 400);
     return s;
   };
   return (
