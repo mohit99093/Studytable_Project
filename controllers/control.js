@@ -37,3 +37,16 @@ exports.getBlog = async (req, res) => {
     res.json(e.message);
   }
 };
+//admin
+exports.postBlog = async (req, res) => {
+  const blog = new Blog(req.body);
+  try {
+    await blog.save();
+    res.json({
+      status: 201,
+      message: "Successfully Uploaded",
+    });
+  } catch (e) {
+    res.json({ status: 401, message: e.message });
+  }
+};

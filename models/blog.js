@@ -1,15 +1,19 @@
 const mongoose = require("mongoose");
 
 const blogSchema = new mongoose.Schema({
-  headline: {
+  heading: {
     type: String,
     required: true,
   },
-  image: {
+  sub: {
     type: String,
     required: true,
   },
-  description: {
+  link: {
+    type: String,
+    required: true,
+  },
+  desc: {
     type: String,
     required: true,
   },

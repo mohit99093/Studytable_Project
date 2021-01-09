@@ -5,6 +5,7 @@ const router = new express.Router();
 
 router.post("/api/info", ctrl.postContact);
 router.post("/api/email", ctrl.postEmail);
+router.post("/api/blog", ctrl.postBlog);
 router.get("/api/blog", ctrl.getBlog);
 
 module.exports = router;

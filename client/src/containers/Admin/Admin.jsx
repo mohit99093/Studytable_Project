@@ -25,6 +25,8 @@ export default function Profile(props) {
   const handler = (e) => {
     setTab(e.target.value);
   };
+  
+    
 
   return (
     <div className="container page admin">
@@ -53,21 +55,7 @@ export default function Profile(props) {
                 <Card style={{ boxShadow: "none" }} className="drop_ad">
                   <select onChange={handler}>
                     <optgroup label="Upload">
-                      <option value="homepage">Homepage</option>
-                      <option value="offers">Offers</option>
-                      <option value="category">Departments and Category</option>
-                      <option value="product">Add Product</option>
-                      <option value="productJSON">Add product as JSON</option>
-                    </optgroup>
-                    <optgroup label="Bulk Uploads">
-                      <option value="categories">
-                        Departments and Categories
-                      </option>
-                      <option value="products">Add Products</option>
-                    </optgroup>
-                    <optgroup label="Edit">
-                      <option value="deleteProduct">Delete Product</option>
-                      <option value="editProduct">Edit Product</option>
+                      <option value="blog">Blog</option>
                     </optgroup>
                   </select>
                 </Card>
@@ -102,9 +90,7 @@ export default function Profile(props) {
             </div>
           </div>
           <div className="col-md-8">
-            <div className="content">
-              {tab == "blog" ? <Blog/> : null}
-            </div>
+            <div className="content">{tab == "blog" ? <Blog /> : null}</div>
           </div>
         </div>
       </div>
