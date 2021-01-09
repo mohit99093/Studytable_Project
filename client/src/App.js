@@ -8,6 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import Contact from "./containers/Contact/Contact";
 import Blogs from "./containers/Blogs/Blogs";
 import Detail from "./containers/Blogs/Details/Detail";
+import Admin from "./containers/Admin/Admin";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/blog" component={Blogs} />
         <Route path="/blogs/detail" component={Detail} />
+        <Route path="/admin" component={Admin} />
       </Switch>
     </div>
   );
