@@ -32,7 +32,7 @@ exports.postEmail = async (req, res) => {
 exports.getBlog = async (req, res) => {
   try {
     const blog = await Blog.find({});
-    res.json({ data: blog });
+    res.json(blog);
   } catch (e) {
     res.json(e.message);
   }

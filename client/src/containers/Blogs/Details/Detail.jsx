@@ -27,7 +27,7 @@ export default function Detail() {
           <div className="right">
             <h5>Recent Articles</h5>
             <div className="list">
-              <div className="card">
+              <div className="card1">
                 <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
                 <div className="rig">
                   <h4> Heading </h4>
@@ -38,7 +38,7 @@ export default function Detail() {
                   </div>
                 </div>
               </div>
-              <div className="card">
+              <div className="card1">
                 <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
                 <div className="rig">
                   <h4> Heading </h4>
@@ -49,7 +49,7 @@ export default function Detail() {
                   </div>
                 </div>
               </div>
-              <div className="card">
+              <div className="card1">
                 <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
                 <div className="rig">
                   <h4> Heading </h4>
@@ -60,7 +60,7 @@ export default function Detail() {
                   </div>
                 </div>
               </div>
-              <div className="card">
+              <div className="card1">
                 <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg" />
                 <div className="rig">
                   <h4> Heading </h4>
