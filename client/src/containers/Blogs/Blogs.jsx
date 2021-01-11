@@ -21,13 +21,13 @@ export default function Blogs() {
         <h1>Blogs</h1>
         <p> The Sub Heading </p>
         <div className="contain">
-          {blog.length>0
+          {blog.length > 0
             ? blog.map((item) => (
                 <div className="card">
                   <img src={item.link} />
                   <h3> {item.heading} </h3>
                   <p>
-                    {item.desc?item.desc.substring(0,400):null}...
+                    {item.desc ? item.desc.substring(0, 400) : null}...
                     <span>
                       <a href="/blogs/detail">Read More</a>
                     </span>

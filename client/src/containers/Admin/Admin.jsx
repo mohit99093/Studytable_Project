@@ -25,23 +25,27 @@ export default function Profile(props) {
   const handler = (e) => {
     setTab(e.target.value);
   };
-  
-    
 
   return (
-    <div className="container page admin">
-      <div className="container main-container">
-        <div className="row mt-4">
-          <div className="col-md-4">
+    <div>
+      <div style={{ width: "80%", margin: "0 auto" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent:'space-between'
+          }}
+        >
+          <div style={{width:'30%'}}>
             <div className="side-nav">
               <div className="mb-4">
                 <Card>
                   <CardContent>
-                    <div className="row align-items-center">
-                      <div className="col-4">
+                    <div style={{display:'flex',alignItems:'center'}}>
+                      <div>
                         <Avatar className="dp" src="" />
                       </div>
-                      <div className="col">
+                      <div style={{margin:'0 2em'}} >
                         <div>
                           Hello,<span style={{ fontSize: "19px" }}> Admin</span>
                         </div>
@@ -51,7 +55,7 @@ export default function Profile(props) {
                 </Card>
               </div>
 
-              <div className="mb-3">
+              <div style={{marginTop:'0em'}}>
                 <Card style={{ boxShadow: "none" }} className="drop_ad">
                   <select onChange={handler}>
                     <optgroup label="Upload">
@@ -89,7 +93,7 @@ export default function Profile(props) {
               </div>
             </div>
           </div>
-          <div className="col-md-8">
+          <div style={{width:'65%'}}>
             <div className="content">{tab == "blog" ? <Blog /> : null}</div>
           </div>
         </div>

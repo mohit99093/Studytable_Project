@@ -27,7 +27,7 @@ export default function Blog() {
   };
 
   return (
-    <Paper className="p-2">
+    <Paper>
       <h1 style={{ textAlign: "center" }}> Blogs </h1>
       <form
         className="mt-2"
@@ -44,35 +44,34 @@ export default function Blog() {
         <TextField
           label="Heading"
           variant="outlined"
-          className="m-2"
+          style={{margin:'1em 0'}}
           name="heading"
           onChange={handle}
         />
         <TextField
           label="Sub-Heading"
           variant="outlined"
-          className="m-2"
+          style={{margin:'1em 0'}}
           name="sub"
           onChange={handle}
         />
         <TextField
           label="Image Link"
           variant="outlined"
-          className="m-2"
+          style={{margin:'1em 0'}}
           name="link"
           onChange={handle}
         />
         <TextField
           label="Description"
           variant="outlined"
-          className="m-2"
+          style={{margin:'1em 0'}}
           name="desc"
           onChange={handle}
         />
         <Button
           type="submit"
-          className="p-2"
-          style={{ color: "white", backgroundColor: "skyblue" }}
+          style={{ color: "white", backgroundColor: "skyblue",padding:'0.75em',margin:'1em 0' }}
         >
           Submit
         </Button>
