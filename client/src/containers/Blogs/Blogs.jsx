@@ -3,7 +3,7 @@ import "./Blogs.scss";
 import Footer from "../Footer/Footer";
 import { Button } from "@material-ui/core";
 
-export default function Blogs() {
+export default function Blogs(props) {
   const [blog, setBlog] = useState([{}]);
   useEffect(() => {
     fetch("/api/blog")
@@ -29,7 +29,7 @@ export default function Blogs() {
                   <p>
                     {item.desc ? item.desc.substring(0, 400) : null}...
                     <span>
-                      <a href="/blogs/detail">Read More</a>
+                      <a href={`/blogs/${item._id}`}>Read More</a>
                     </span>
                   </p>
                 </div>

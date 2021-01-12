@@ -50,3 +50,12 @@ exports.postBlog = async (req, res) => {
     res.json({ status: 401, message: e.message });
   }
 };
+
+exports.getData = async (req, res) => {
+  try {
+    const blog = await Blog.findById(req.query.id);
+    res.json(blog);
+  } catch (e) {
+    res.json(e.message);
+  }
+};
