@@ -9,12 +9,16 @@ import Contact from "./containers/Contact/Contact";
 import Blogs from "./containers/Blogs/Blogs";
 import Detail from "./containers/Blogs/Details/Detail";
 import Admin from "./containers/Admin/Admin";
+import SignIn from "./containers/SignIn/signin";
+import Register from "./containers/Register/register";
 
 function App() {
   return (
     <div>
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/register" component={Register} />
         <Route path="/student" component={Student} />
         <Route path="/teacher" component={Teacher} />
         <Route path="/school" component={School} />

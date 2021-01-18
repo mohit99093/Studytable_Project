@@ -5,6 +5,8 @@ import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../../../store/actions/auth";
 
 export default function Main() {
   const [state, setState] = React.useState({
@@ -21,7 +23,7 @@ export default function Main() {
 
     setState({ ...state, [anchor]: open });
   };
-
+  const dispatch = useDispatch();
   const list = (anchor) => (
     <div
       className="drawer"
@@ -79,6 +81,11 @@ export default function Main() {
     </div>
   );
 
+  const user = useSelector((state) => state.userName);
+  const handle = () => {
+    logout(dispatch);
+  };
+
   return (
     <section className="main">
       <div className="navbar">
@@ -101,7 +108,16 @@ export default function Main() {
           <div className="list">
             <a href="/blog">Blogs</a>
           </div>
-          <div className="btns">Download Studytable</div>
+          {user ? (
+            <div className="list">
+              <a href="/profile"> {user}</a>
+              <button onClick={handle}>Logout</button>
+            </div>
+          ) : (
+            <a href="/SignIn" className="btns">
+              Login
+            </a>
+          )}
         </div>
 
         <React.Fragment key="right">
