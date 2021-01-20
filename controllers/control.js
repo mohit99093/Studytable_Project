@@ -24,6 +24,9 @@ exports.postEmail = async (req, res) => {
   const email = new Email(req.body);
   try {
     await email.save();
+    let text = `Hello ${email.email}, We got your email! Will back to you soon.`;
+    let subject = "StudyTable";
+    use.sentMail(email, subject, text);
     res.json({
       status: 201,
       message: "We got your email. Will update you soon !!",
