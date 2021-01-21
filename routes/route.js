@@ -1,16 +1,18 @@
 const express = require("express");
-const ctrl = require("../controllers/control");
+const email = require("../controllers/email");
+const user = require("../controllers/user");
+const blogs = require("../controllers/blog");
 
 const router = new express.Router();
 
-router.post("/api/info", ctrl.postContact);
-router.post("/api/email", ctrl.postEmail);
-router.post("/api/blog", ctrl.postBlog);
-router.get("/api/blog", ctrl.getBlog);
-router.get("/api/blogs", ctrl.getData);
-router.post("/api/register", ctrl.postRegister);
-router.post("/api/signin", ctrl.signin);
-router.post("/api/forgot", ctrl.sendOTP);
-router.post("/api/changePassword", ctrl.changePassword);
+router.post("/api/info", email.postContact);
+router.post("/api/email", email.postEmail);
+router.post("/api/blog", blogs.postBlog);
+router.get("/api/blog", blogs.getBlog);
+router.get("/api/blogs", blogs.getData);
+router.post("/api/register", user.postRegister);
+router.post("/api/signin", user.signin);
+router.post("/api/forgot", user.sendOTP);
+router.post("/api/changePassword", user.changePassword);
 
 module.exports = router;

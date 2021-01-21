@@ -1,71 +1,7 @@
-const Contact = require("../models/contact");
-const Email = require("../models/emails");
-const Blog = require("../models/blog");
 const Register = require("../models/register");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const use = require("../utils/emails");
-
-//contact
-exports.postContact = async (req, res) => {
-  const contact = new Contact(req.body);
-  try {
-    await contact.save();
-    res.json({
-      status: 201,
-      message:
-        "Thank you for taking interest in us. Our Team will have coffee with you soon !!",
-    });
-  } catch (e) {
-    res.json({ status: 401, message: e.message });
-  }
-};
-exports.postEmail = async (req, res) => {
-  const email = new Email(req.body);
-  try {
-    await email.save();
-    let text = `Hello ${email.email}, We got your email! Will back to you soon.`;
-    let subject = "StudyTable";
-    use.sentMail(email, subject, text);
-    res.json({
-      status: 201,
-      message: "We got your email. Will update you soon !!",
-    });
-  } catch (e) {
-    res.json({ status: 401, message: e.message });
-  }
-};
-
-exports.getBlog = async (req, res) => {
-  try {
-    const blog = await Blog.find({});
-    res.json(blog);
-  } catch (e) {
-    res.json(e.message);
-  }
-};
-//admin
-exports.postBlog = async (req, res) => {
-  const blog = new Blog(req.body);
-  try {
-    await blog.save();
-    res.json({
-      status: 201,
-      message: "Successfully Uploaded",
-    });
-  } catch (e) {
-    res.json({ status: 401, message: e.message });
-  }
-};
-
-exports.getData = async (req, res) => {
-  try {
-    const blog = await Blog.findById(req.query.id);
-    res.json(blog);
-  } catch (e) {
-    res.json(e.message);
-  }
-};
 
 exports.postRegister = async (req, res) => {
   console.log(req.body);
