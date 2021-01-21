@@ -58,7 +58,7 @@ export default function Contact() {
   return (
     <div className="contacts">
       <a className="logo" href="/">
-        STUDY<span>table </span>{" "}
+        STUDY<span>table </span>
       </a>
       <h1>Contact Us</h1>
       <div className="form">
@@ -81,21 +81,18 @@ export default function Contact() {
           })}
           {inp.length < 5 ? (
             <div className="next">
-              {" "}
               <Button className="btn13" onClick={handle}>
-                {" "}
-                Next{" "}
-              </Button>{" "}
+                Next
+              </Button>
             </div>
-          ) : (
+          ) : null}
+          {inp.length >= 5 ? (
             <div className="subm">
-              {" "}
               <Button className="btn13" type="submit">
-                {" "}
-                Submit{" "}
-              </Button>{" "}
+                Submit
+              </Button>
             </div>
-          )}
+          ) : null}
         </form>
         <div className="status">
           <p className={status.status === 201 ? "green" : "red"}> {msg} </p>
