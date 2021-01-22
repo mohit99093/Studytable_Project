@@ -114,7 +114,7 @@ export default function Main() {
               <button onClick={handle}>Logout</button>
             </div>
           ) : (
-            <a href="/SignIn" className="btns">
+            <a href="/signin" className="btns">
               Login
             </a>
           )}

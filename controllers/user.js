@@ -3,13 +3,14 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const use = require("../utils/emails");
 
-exports.postRegister = async (req, res) => {
-  console.log(req.body);
-
+exports.postRegister = async (req, res) => { 
+  
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
+  const user = Register.findOne({ email: req.body.email })
+  if (user)
+        return res.json({ status:401, message : " [backend] : m : One User already exist with this Email use differnt Email-ID" })  
   const register = new Register({ ...req.body, password: hashedPassword });
-  console.log(register);
   try {
     await register.save();
     res.json({
@@ -21,6 +22,8 @@ exports.postRegister = async (req, res) => {
     res.json({ status: 401, message: e.message });
   }
 };
+
+// sign in
 exports.signin = async (req, res) => {
   const user = await Register.findOne({ email: req.body.email });
   if (!user)
@@ -35,11 +38,10 @@ exports.signin = async (req, res) => {
 
   let token = jwt.sign(
     { email: req.body.email, userId: user._id },
-    "studyTable",
-    { expiresIn: "2h" }
+    process.env.JWT_SECRET,
+    { expiresIn: process.env.JWT_EXPIRES_IN }
   );
-  console.log(user);
-  console.log(token);
+
   return res.json({
     status: 201,
     idToken: token,

@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config();
 require("./utils/database");
 const path = require("path");
 const app = express();
